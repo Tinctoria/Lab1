@@ -248,6 +248,30 @@ article h2, article p, h2 {
     bottom: 12px;
 }
 
+.nav-wrap{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.nav-link i{
+   font-size: 2rem;
+}
+
+.nav-link a, .nav-link p{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+.content-wrap:last-of-type{
+    background-color: white;
+}
 
 
 /*on phone*/
@@ -279,5 +303,6 @@ article h2, article p, h2 {
    .card2 li:hover{ 
     background-color: rgba(0, 0, 0, 0.9);
    }
-        
+   .nav-wrap{
+       flex-direction: column; 
 }
