@@ -14,21 +14,23 @@
 </head>
 <body>
     <div class="website-background">
+        <!--Första bannern-->
         <div class="banner-wrap">
-             <div class="banner">
-            <div class="banner-fade"></div>
-            <div class="banner-content">
-                <h1 class="banner-name">Ida Karlsson</h1>
-                <p>Frontend developer in training</p>
+            <div class="banner">
+                <div class="banner-fade"></div>
+                <div class="banner-content">
+                    <h1 class="banner-name">Ida Karlsson</h1>
+                    <p>Frontend developer in training</p>
+                </div>
             </div>
         </div> 
-        </div>
-          
+        <!--allt innehåll i sidan--> 
         <div class="website-content">
+            <!--About me-->
             <div class="article-wrap">
                 <article>
                     <h2>About me</h2>
-                    <p>My name is Ida Karlsson. I am a former structional engineer who is now on the path to becoming a frontend developer.
+                    <p>My name is Ida Karlsson, my pronouns are her/she. I am a former structional engineer who is now on the path to becoming a frontend developer.
                         I live in Växjö, Sweden, with my significant other Fredrik, and our two adopted cats, Hades and Hannibal. 
                         One of my main hobbies are games, including (but not limited to) video games, tabletop games and roleplaying games. I also enjoy yoga and geocaching... just not as much as games.  
                         <br> 
@@ -38,7 +40,7 @@
                     </p>
                 </article>
             </div>
-            
+            <!--Utbildning-->
             <div class="content-wrap">
                 <div class="headline-wrap">
                     <h2>Education</h2>
@@ -74,6 +76,7 @@
                     </section>
                 </div>
             </div>
+            <!--Erfarenhet-->
             <div class="content-wrap">
                 <div class="headline-wrap">
                     <h2>Experience</h2>
@@ -103,25 +106,36 @@
                     </section>
                 </div>
             </div>
+            <!--formulär-->
             <div class="content-wrap">
                 <div class="headline-wrap">
-                    <h2>Do you have a question for me?</h2>
+                    <h2>Do you have questions?</h2>
                 </div>
-                <div class="form-wrap">
-                    <form>
-                        <label>Name and email</label>
-                        <section class="split"> 
-                            <input type="text" placeholder="first name">
-                            <input type="text" placeholder="last name">
-                        </section>
-                        <input type="email" placeholder="ex: email@email.com">
-                        <label>Your question: </label>
-                        <textarea></textarea>
-                        <input type="submit"> 
-                    </form>
+                <div class="card-wrap">
+                    <section class="card4">
+                        <p>That's allright, we all have questions.<br>
+                            <br>
+                            If you have a question about me, <br> 
+                            my work, the cats or whatever, <br>
+                            I will try my best to answer them. <br>
+                        <br>
+                        Just fill in this form and press send.</p>
+                        <i class="bi bi-arrow-right-circle bounceInLeft"></i>  
+                    </section>
+                    <section class="card4">
+                        <form class="form-wrap"> 
+                            <label>Who are you?</label>
+                            <input type="text" name="nick" placeholder="Name">
+                            <input type="email" name="email" placeholder="Email">
+                            <p>Don't worry. I wont share your email with anyone.</p>
+                            <label>Write your question:</label>
+                            <textarea type="text" name="question" placeholder="Ex: How are you so awesome?"></textarea>
+                            <input class="button" type="submit" name="submit" value="Send">
+                        </form>
+                    </section>
                 </div>
-                
             </div>
+            <!-- Sista bannern med länkar till andra ställen-->
             <div class="content-wrap">
                 <div class="headline-wrap">
                     <h2>Find me elsewere: </h2>

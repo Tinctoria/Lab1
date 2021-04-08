@@ -8,6 +8,10 @@
     from{color:lightgrey;}
     to{ color: black;}
 }
+@keyframes bounce-right{
+     0%{ right:0;}
+     100% { right:2rem;}
+}
 
 .website-background {
     width: 100%;
@@ -248,41 +252,107 @@ article h2, article p, h2 {
     bottom: 12px;
 }
 
+.card4 {
+   
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* formulär*/
 
+.website-content div:nth-child(4){
+    background-color:unset;
+    color: white;
+} 
+
+.website-content div:nth-child(4) .card-wrap{
+   justify-content: center;
+} 
+
+.card4 i{
+    color:white;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    animation: bounce-right 1s ease-in-out infinite alternate;
+}
+
+.card4:first-of-type{
+    width: 30%;
+    position: relative;
+}
+.card4:last-of-type{
+    width: 30%;
+}
+
 .form-wrap{
-    width:40%;
-    height:256px;
-    display: flex;  
+    width: 100%;
+    display: flex;
+    padding: 2rem;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
     background-color: white;
     border-radius: 12px;
-    margin-bottom: 2rem;
+    color: black;
+    position: relative;
 }
-form{
-    display: flex;
-    height: 100%;
-    margin: 0.5rem;
-    flex-direction: column;
-}
-.split{
-    display: flex;
-    flex-direction: row;  
-}
+ form p{
+     color:lightgrey;
+     font-size: 10px;
+     margin-bottom:1rem;
+     margin-top:0.2rem;
+ }
+
 label{
-    flex:1;
-    margin: 0.5rem;
+    color: rgb(16, 68, 15);
 }
-input{
-    flex: 1;
-    padding: 0.3rem;
-    border-radius: 0.3rem;
+input {
+    width: 30%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.05);
+    border-radius: 3px;
+    
+}
+input[type="email"]{
+    width: 90%;    
+}
+.button{
+    width: 5rem; 
+    height: 2rem;
+    background-color:rgb(16, 68, 15);
+    color: white;
+    transition: 0.5s;
 
 }
+.button:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25), 0 6px 8px rgba(0,0,0,0.22);
+    transition: 0.5s;
+    
+}
+input:focus, textarea:focus {
+    outline:none; 
+    background-color: #e2ecde;
+}
+ 
 textarea{
-    min-height: 2rem;
-    flex: 2;
-    border-radius: 0.3rem;
+    width: 90%;
+    min-height: 3rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.05);
+    border-radius: 3px;
+}
+
+::placeholder{
+    color: lightgray;
 }
 
 
@@ -344,4 +414,35 @@ textarea{
    }
    .nav-wrap{
        flex-direction: column; 
+    }
+
+    .card4 { 
+        width:100% !important;
+        height: fit-content;
+    }
+    .card4 i {
+        display: none;
+    }
+    .card4 p {
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .card4 i {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    
+    .card4 { 
+        width:100% !important;
+        height: fit-content;
+    }
+    
+    .card4 p {
+        margin-bottom: 1rem;
+    }
+
 }
